@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 
 import { useState } from 'react';
@@ -44,88 +43,10 @@ export default function Tracking() {
       setError('An error occurred while fetching tracking information.');
     } finally {
       setIsLoading(false);
-=======
-
-"use client";
-
-import { useState } from "react";
-
-interface TrackingInfo {
-  status: string;
-  location?: string;
-  estimatedDelivery?: string;
-  details?: { date: string; time: string; status: string }[];
-  message?: string;
-}
-import styles from "./page.module.css";
-
-export default function Tracking() {
-  const [trackingNumber, setTrackingNumber] = useState("");
-  const [trackingInfo, setTrackingInfo] = useState<TrackingInfo | null>(null);
-
-  const handleTrack = () => {
-    // Simulate API call
-    if (trackingNumber === "12345") {
-      setTrackingInfo({
-        status: "In Transit",
-        location: "New York, USA",
-        estimatedDelivery: "2025-09-20",
-        details: [
-          { date: "2025-09-14", time: "10:00 AM", status: "Shipped from origin" },
-          { date: "2025-09-15", time: "03:00 PM", status: "Arrived at sorting facility" },
-          { date: "2025-09-16", time: "08:00 AM", status: "In transit to destination" },
-        ],
-      });
-    } else if (trackingNumber === "67890") {
-      setTrackingInfo({
-        status: "Delivered",
-        location: "London, UK",
-        estimatedDelivery: "2025-09-10",
-        details: [
-          { date: "2025-09-08", time: "09:00 AM", status: "Shipped from origin" },
-          { date: "2025-09-09", time: "02:00 PM", status: "Arrived at destination country" },
-          { date: "2025-09-10", time: "11:00 AM", status: "Delivered" },
-        ],
-      });
-    } else if (trackingNumber === "11223") {
-      setTrackingInfo({
-        status: "Pending",
-        location: "Warehouse, Accra",
-        estimatedDelivery: "2025-09-25",
-        details: [
-          { date: "2025-09-16", time: "11:00 AM", status: "Order received" },
-          { date: "2025-09-16", time: "02:00 PM", status: "Pending" },
-        ],
-      });
-    } else if (trackingNumber === "54321") {
-      setTrackingInfo({
-        status: "Pending Dispatch",
-        location: "Warehouse, Lagos",
-        estimatedDelivery: "2025-09-25",
-        details: [
-          { date: "2025-09-16", time: "11:00 AM", status: "Order received" },
-          { date: "2025-09-16", time: "02:00 PM", status: "Pending Dispatch" },
-        ],
-      });
-    } else if (trackingNumber === "98765") {
-      setTrackingInfo({
-        status: "Pending Dispatch Authorization",
-        location: "Warehouse, Lagos",
-        estimatedDelivery: "2025-09-28",
-        details: [
-          { date: "2025-09-17", time: "09:00 AM", status: "Order received" },
-          { date: "2025-09-17", time: "11:00 AM", status: "Pending Dispatch" },
-          { date: "2025-09-17", time: "03:00 PM", status: "Pending Dispatch Authorization" },
-        ],
-      });
-    } else {
-      setTrackingInfo({ status: "Not Found", message: "Tracking number not found." });
->>>>>>> 231c9eec9d35a9151fdfb9bd7a7de04224e90b2c
     }
   };
 
   return (
-<<<<<<< HEAD
     <div className={styles.container}>
       <h1 className={styles.title}>Track Your Shipment</h1>
       <div className={styles.trackingForm}>
@@ -184,48 +105,6 @@ export default function Tracking() {
       {trackingInfo && trackingInfo.length === 0 && (
         <p>No tracking information found for the tracking number: {trackingNumber}</p>
       )}
-=======
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>Shipment Tracking</h1>
-        <div className={styles.content}>
-          <p>Track your shipment by entering the tracking number below.</p>
-          <div className={styles.form}>
-            <input
-              type="text"
-              placeholder="Enter your tracking number (e.g., 12345, 67890, 54321, 98765, or 11223)"
-              value={trackingNumber}
-              onChange={(e) => setTrackingNumber(e.target.value)}
-            />
-            <button onClick={handleTrack}>Track</button>
-          </div>
-
-          {trackingInfo && (
-            <div className={styles.trackingResults}>
-              <h2>Tracking Status: {trackingInfo.status}</h2>
-              {trackingInfo.message ? (
-                <p>{trackingInfo.message}</p>
-              ) : (
-                <>
-                  <p><strong>Current Location:</strong> {trackingInfo.location}</p>
-                  <p><strong>Estimated Delivery:</strong> {trackingInfo.estimatedDelivery}</p>
-                  <h3>Details:</h3>
-                  {trackingInfo.details && trackingInfo.details.length > 0 && (
-                    <ul className={styles.trackingDetails}>
-                      {trackingInfo.details.map((event, index) => (
-                        <li key={index}>
-                          <span>{event.date} {event.time}</span> - <span>{event.status}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </>
-              )}
-            </div>
-          )}
-        </div>
-      </main>
->>>>>>> 231c9eec9d35a9151fdfb9bd7a7de04224e90b2c
     </div>
   );
 }
