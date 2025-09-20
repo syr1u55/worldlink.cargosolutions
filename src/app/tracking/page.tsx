@@ -39,7 +39,7 @@ export default function Tracking() {
         const errorText = await res.text();
         setError(`Error: ${errorText}`);
       }
-    } catch (err) {
+    } catch (_err) {
       setError('An error occurred while fetching tracking information.');
     } finally {
       setIsLoading(false);
