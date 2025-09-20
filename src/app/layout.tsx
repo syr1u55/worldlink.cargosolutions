@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Worldlink Cargo Solutions",
   description: "Worldlink Cargo Solutions - Your trusted partner for global shipping and logistics solutions.",
-
+  viewport: 'width=device-width, initial-scale=1',
 };
 
 export default function RootLayout({

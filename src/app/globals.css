@@ -6,6 +6,11 @@
   --text-color: #333;
   --light-bg: #f8f8f8;
   --dark-bg: #222;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
 }
 
 @media (prefers-color-scheme: dark) {
