@@ -45,7 +45,7 @@ export default function AboutUs() {
           <h2>👉 CONTACT & SUPPORT</h2>
           <p>📧 <a href="mailto:worldlink.cargosolutions@gmail.com">worldlink.cargosolutions@gmail.com</a></p>
           <p>📞 <a href="tel:+15803168135">+1 580-316-8135</a></p>
-          <p>(Rotterdam HQ)</p>
+          <p>(123 Main St, Anytown, CA 90210)</p>
         </div>
       </main>
     </div>

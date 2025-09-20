@@ -31,7 +31,7 @@ const Footer = () => {
           <h3>Contact Us</h3>
           <p>Email: info@worldlinkcargo.com</p>
           <p>Phone: +15803168135</p>
-          <p>Address: 123 Logistics St, Global City</p>
+          <p>Address: 123 Main St, Anytown, CA 90210</p>
         </div>
       </div>
       <div className={styles.bottomBar}>
