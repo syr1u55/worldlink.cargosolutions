@@ -1,0 +1,56 @@
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.column h3 {
+  color: #ffd700; /* Gold color for headings */
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.column p,
+.column ul {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.column ul li a:hover {
+  color: #ffd700;
+}
+
+.bottomBar {
+  text-align: center;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid #333;
+}

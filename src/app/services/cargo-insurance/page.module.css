@@ -1,0 +1,30 @@
+
+.page {
+  padding: 4rem 2rem;
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #003366;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}

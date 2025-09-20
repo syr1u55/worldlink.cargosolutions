@@ -1,0 +1,44 @@
+[
+  {
+    "trackingNumber": "KASHMONY123",
+    "status": "Delivered",
+    "location": "Miami florida",
+    "details": "done",
+    "timestamp": "2025-09-20T11:08:14.888Z"
+  },
+  {
+    "trackingNumber": "KASHMONY123",
+    "status": "Delivered",
+    "location": "Miami florida",
+    "details": "done",
+    "timestamp": "2025-09-20T11:08:14.931Z"
+  },
+  {
+    "trackingNumber": "B12345",
+    "status": "Processing",
+    "location": "New jersey",
+    "details": "done",
+    "timestamp": "2025-09-20T11:09:34.508Z"
+  },
+  {
+    "trackingNumber": "09112387304",
+    "status": "Processing",
+    "location": "Atlanta  georgia",
+    "details": "done",
+    "timestamp": "2025-09-20T11:21:15.680Z"
+  },
+  {
+    "trackingNumber": "9032212846",
+    "status": "Processing",
+    "location": "Atlanta  georgia",
+    "details": "done",
+    "timestamp": "2025-09-20T11:22:15.810Z"
+  },
+  {
+    "trackingNumber": "B12345",
+    "status": "On The Way",
+    "location": "New jersey",
+    "details": "done",
+    "timestamp": "2025-09-20T15:53:25.642Z"
+  }
+]
