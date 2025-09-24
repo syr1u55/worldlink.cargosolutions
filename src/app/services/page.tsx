@@ -1,19 +1,5 @@
 
 import Link from "next/link";
-<<<<<<< HEAD
-import styles from "./page.module.css";
-
-const services = [
-  { name: "Land Transport", href: "/services/land-transport" },
-  { name: "Sea Freight", href: "/services/sea-freight" },
-  { name: "Air Freight", href: "/services/air-freight" },
-  { name: "Forwarding Services", href: "/services/forwarding-services" },
-  { name: "Logistics", href: "/services/logistics" },
-  { name: "Warehousing", href: "/services/warehousing" },
-  { name: "Diplomatic Shipment", href: "/services/diplomatic-shipment" },
-  { name: "Supply Chain", href: "/services/supply-chain" },
-  { name: "Cargo Insurance", href: "/services/cargo-insurance" },
-=======
 import ServicesHero from "../../components/ServicesHero/ServicesHero";
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
 import styles from "./page.module.css";
@@ -73,25 +59,13 @@ const servicesData = [
     description: 'End-to-end logistics solutions to optimize your operations.',
     href: '/services/logistics',
   },
->>>>>>> 231c9eec9d35a9151fdfb9bd7a7de04224e90b2c
+
+
 ];
 
 export default function Services() {
   return (
     <div className={styles.page}>
-<<<<<<< HEAD
-      <main className={styles.main}>
-        <h1 className={styles.title}>Our Services</h1>
-        <div className={styles.serviceGrid}>
-          {services.map((service) => (
-            <Link key={service.name} href={service.href}>
-              <a className={styles.serviceCard}>
-                <h3>{service.name}</h3>
-              </a>
-            </Link>
-          ))}
-        </div>
-=======
       <ServicesHero />
       <main className={styles.main}>
         <section className={styles.servicesGridSection}>
@@ -121,7 +95,6 @@ export default function Services() {
             <Link href="/quote" className={styles.callToActionButton}>Get a Free Quote</Link>
           </div>
         </section>
->>>>>>> 231c9eec9d35a9151fdfb9bd7a7de04224e90b2c
       </main>
     </div>
   );

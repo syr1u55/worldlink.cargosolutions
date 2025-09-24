@@ -59,3 +59,39 @@
   font-size: 1rem;
   color: #666;
 }
+
+@media (max-width: 768px) {
+  .servicesSection {
+    padding: 2rem 0;
+  }
+
+  .servicesSection h2 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Stack cards vertically */
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}

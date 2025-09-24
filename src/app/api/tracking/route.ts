@@ -3,6 +3,14 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+interface TrackingItem {
+  trackingNumber: string;
+  status: string;
+  location: string;
+  details: string;
+  timestamp: string;
+}
+
 const dataFilePath = path.join(process.cwd(), 'data', 'tracking.json');
 
 export async function POST(req: NextRequest) {
@@ -24,7 +32,7 @@ export async function POST(req: NextRequest) {
       timestamp: new Date().toISOString(),
     };
 
-    let trackingData = [];
+    let trackingData: TrackingItem[] = [];
     if (fs.existsSync(dataFilePath)) {
       const fileContent = fs.readFileSync(dataFilePath, 'utf-8');
       if (fileContent) {
@@ -56,10 +64,10 @@ export async function GET(req: NextRequest) {
   }
 
   const fileContent = fs.readFileSync(dataFilePath, 'utf-8');
-  const trackingData = JSON.parse(fileContent);
+  const trackingData: TrackingItem[] = JSON.parse(fileContent);
 
   const trackingInfo = trackingData.filter(
-    (item: any) => item.trackingNumber === trackingNumber
+    (item: TrackingItem) => item.trackingNumber === trackingNumber
   );
 
   if (trackingInfo.length === 0) {

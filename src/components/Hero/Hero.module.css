@@ -50,3 +50,22 @@
 .button:hover {
   background-color: #e6c200;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    height: 40vh; /* Shorter height on mobile */
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+}

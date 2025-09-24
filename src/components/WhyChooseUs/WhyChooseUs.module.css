@@ -51,3 +51,35 @@
   font-size: 1rem;
   color: #666;
 }
+
+@media (max-width: 768px) {
+  .whyChooseUsSection {
+    padding: 2rem 0;
+  }
+
+  .whyChooseUsSection h2 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Stack cards vertically */
+    gap: 1.5rem;
+  }
+
+  .featureCard {
+    padding: 1.5rem;
+  }
+
+  .featureCard h3 {
+    font-size: 1.3rem;
+  }
+
+  .featureCard p {
+    font-size: 0.9rem;
+  }
+}
